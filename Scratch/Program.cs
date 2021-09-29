@@ -27,6 +27,12 @@ namespace Scratch
             
             z.Save();
 
+            var str = new MyStruct { Name = "Karen" };
+            var str1 = (MyStruct) str.Clone();
+            
+            Console.WriteLine(str.Name);
+            Console.WriteLine(str1.Name);
+
             Console.WriteLine("Hello World!");
         }
 
